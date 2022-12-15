@@ -2,7 +2,7 @@ SRCS	= 	main.cpp
 
 CFLAGS	= -Werror -Wextra -Wall -std=c++98 -pedantic
 CC		= g++-12
-NAME	= swap
+NAME	= iter
 OBJS	= ${SRCS:.cpp=.o}
 RM		= rm -f
 
