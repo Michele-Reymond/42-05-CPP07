@@ -7,6 +7,7 @@ int main( void ) {
     int a = 2;
     int b = 3;
 
+    std::cout << "Given main: " << std::endl;
     ::swap( a, b );
     std::cout << "a = " << a << ", b = " << b << std::endl;
     std::cout << "min( a, b ) = " << ::min( a, b ) << std::endl;
@@ -23,6 +24,7 @@ int main( void ) {
     char e = 'e';
     char f = 'f';
 
+    std::cout << std::endl << std::endl << "My main: " << std::endl;
     std::cout << "e = " << e << ", f = " << f << std::endl;
     // instanciation explicite
     swap<char>(e,f);
@@ -30,5 +32,7 @@ int main( void ) {
     // instanciation implicite
     swap(e,f);
     std::cout << "e = " << e << ", f = " << f << std::endl;
+    std::cout << "min : " << ::min( f, e ) << std::endl;
+    std::cout << "max : " << ::max( f, e ) << std::endl;
     return 0;
 }
